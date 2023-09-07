@@ -9,6 +9,7 @@
 ## 5. what is difference between `dependencies` and `devdependencies`?
    `dependencies` is known for storing the information about packages and its versions need to be used in our project which need to be used in both development and deployment of the project
    `devDependencies` is known for storing the information about packages and its version need to be used in our project which need to be used only in the development of the project 
+
 ## 6. What is Tree-Shaking?
    `Tree-Shaking` is the process of removing  the unused code in the project . It is important process for making our app production with clean structure and minimal code
    It relies on import and export statements between the javascript files and modues to figure out unused code and remove it.
@@ -44,17 +45,19 @@
    the `dist` folder contains the output of parcel which is served to the web server . 
    It will bundle all files into a js file
 ## 14. What is `browserlists`?
+   Browserslist can specify the versions of the browser in whcih our app will run . It provides a configuration for specifying the browser ranges. It is used ny autoPrefixer,babel,postCSS,ESLint.
 ## 15. Read about different bundlers : vite, webpack, parcel
+   `VITE` - it is a development tool that comes with a dev server and is used in modern web applications, It offers faster and smooth workflow in terms of development 
+          - It has web server which serves the source files over native ES modules with built-in feature and Fast Hot Mpdule Replacement(HMR) for updating files during the execution of the application.when changes are made to the source code only those code gets changed without the need o reload the entire application
+          - A build command which enables us to bundle our application with rollup and offers optimized code for the production
+   `Webpack` - It is a module bundler and also comes with dev server and task runner.The  bundling process begins from user-defined entries .Entries are themselves modules and can point to other modules using import statement.
+             - When you bundle a project using webpack ,it traverse through the imports, constructing a dependency graph of the project and then generates the output based on the configuration 
+   `parceljs` - It is a module bundler and comes in with lot of built-in tools like dev server, image compress, minifier. It is a zero config tool for buldng web application
+              - It is a simple json based config format that uses globs to match your source files to build pipelines 
 ## 16. Read about caret(^) anfd tilde(~)
+   (^) caret - compatible with version, i.e. only accepts new minor and patch versions.
+   (~) tilde - approximately equivalent to version, i.e. only accept new patch versions.
 ## 17. Read about script types in html (MDN Docs)
-## THREE SUPERPOWERS OF PARCEL
-   -- HMR - Hot Module reload
-   -- Compression 
-   -- Image Optimisation
-   -- Minify
-   -- bundle
-   -- cleaning the console
-   -- build and development 
-   -- file watcher algorithm
-   -- consistent hashing algorithm
-   -- super fast build algorithm
+   This attribute indicates the type of script presented .This attribute is not by default 
+    # module - This value causes the code to be treated as javascript modules
+    #importmap - This value indicates that bod of the element contains an import map which is a json map used by the developers to control how browser resolve the module specifiers
