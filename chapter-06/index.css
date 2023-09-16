@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: #e2d8d8;
+}
+
+.logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.nav-links > li {
+    list-style-type: none;
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+    background-color: #c1caca;
+    box-shadow: 0.3rem 0.3rem #939696;
+    transition: 1s;
+}
+
+.nav-links > li:hover {
+    background-color: #6e7a7a;
+}
+
+.restaurant-list {
+    padding: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-container {
+    height: 100%;
+}
+
+.restaurant-card {
+    background-color: #fff;
+    box-shadow: 0px 8px 8px rgba(0, 34, 43, 0.4);
+    border-radius: 10px;
+    width: 250px;
+    padding: 10px;
+    margin: 10px 20px;
+}
+
+.restaurant-card:hover {
+    cursor: pointer;
+    box-shadow: 2px 6px 8px rgba(0, 76, 34, 0.6);
+    transition: all ease-in-out 9ms;
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.restaurant-card > h2 + p + p {
+    margin-top: 10px;
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.search-bar {
+    width: 30%;
+    height: 50px;
+    padding: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
+}
+
+.search-bar-container button {
+    height: 50px;
+    width: 80px;
+}
+
+.shimmer-card {
+    width: 250px;
+    height: 350px;
+    background-color: #fff;
+    box-shadow: 0px 8px 8px rgba(0, 34, 43, 0.4);
+    padding: 10px;
+    margin: 10px 20px;
+}
+
+.shimmer-card .shimmerBG {
+    animation-name: shimmer;
+    animation-duration: 2.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    background: #ddd;
+    background: linear-gradient(to right,#f0f0f0 8%,#f6f6f6 16%,#f0f0f0 22%);
+    background-size: 1200px 100%;
+}
+
+.media {
+    height: 150px;
+    margin: 10px 0;
+}
+
+
+.line-title {
+    height: 30px;
+    margin: 10px 0;
+}
+
+.line-title-small {
+    height: 25px;
+    margin: 10px 0;
+}
+
+.line1 {
+    height: 10px;
+    margin: 10px 0;
+}
+
+.line2 {
+    width: 30%;
+    height: 10px;
+}
+@keyframes shimmer {
+    0% {
+        background-position: -1200px 0;
+    }
+    100% {
+        background-position: 1200px 0;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2d8d8;
+    height: 80px;
+    font-size: 2rem;
+}
+
+footer > p {
+    margin: 0 5px;
+}
