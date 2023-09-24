@@ -37,7 +37,7 @@ export const ShimmerBanner = () => {
 export const ShimmerMenu = () => {
 
     return (
-        <div className="shimmer-menu">
+        <div className="shimmer-menu-container">
             {Array(11).fill(0).map(i => (
                 <div className="shimmer-menu shimmerBG">
                 <div className="shimmerBG shimmer-left">
