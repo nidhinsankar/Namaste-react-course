@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: #e2d8d8;
+}
+
+.logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.nav-links > li {
+    list-style-type: none;
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+    background-color: #c1caca;
+    box-shadow: 0.3rem 0.3rem #939696;
+    transition: 1s;
+}
+
+.nav-links > li:hover , .nav-button:hover {
+    background-color: #6e7a7a;
+}
+
+.restaurant-list {
+    padding: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-container {
+    height: 100%;
+}
+
+.restaurant-card {
+    background-color: #fff;
+    box-shadow: 0px 8px 8px rgba(0, 34, 43, 0.4);
+    border-radius: 10px;
+    width: 250px;
+    padding: 10px;
+    margin: 10px 20px;
+}
+
+.restaurant-card:hover {
+    cursor: pointer;
+    box-shadow: 2px 6px 8px rgba(0, 76, 34, 0.6);
+    transition: all ease-in-out 9ms;
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.restaurant-card > h2 + p + p {
+    margin-top: 10px;
+}
+
+/* RESTAURANT MENU */
+
+.restaurant-menu-page {
+    min-height: calc(100vh - 100px);
+}
+
+.restaurant-info {
+    background-color: #171717;
+    color: #f6f6f6;
+    height: 200px;
+}
+
+.restaurant-info-container {
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    /* background-color: #c1caca; */
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+
+img.restaurant-image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position:50%;
+}
+
+.restaurant-details {
+    width: 50%;
+    /* padding: 1rem; */
+}
+
+.restaurant-details h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.restaurant-info-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.restaurant-menu-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.menu-card {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    background-color: #fff;
+    padding: 1rem;
+    gap: 10px;
+}
+
+.left-side {
+    flex: 0 0 70%;
+}
+
+.right-side {
+    flex: 0 0 20%;
+}
+
+img.menu-image {
+    width: 100%;
+    height: 80%;
+    display: block;
+}
+
+.right-side button {
+    display: block;
+    margin: 0.234rem 0;
+    cursor: pointer;
+    background-color: #2ea44f;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    width: 100%;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    padding: 6px 16px;
+}
+
+/* HOME PAGE */
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.search-bar {
+    width: 30%;
+    height: 50px;
+    padding: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
+}
+
+.search-bar-container button {
+    height: 50px;
+    width: 80px;
+}
+
+/* SHIMMER COMPONENTS */
+.shimmer-card {
+    width: 250px;
+    height: 350px;
+    background-color: #fff;
+    box-shadow: 0px 8px 8px rgba(0, 34, 43, 0.4);
+    padding: 10px;
+    margin: 10px 20px;
+}
+.shimmerBG {
+    animation-name: shimmer;
+    animation-duration: 2.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    background: #ddd;
+    background: linear-gradient(to right,#f0f0f0 8%,#f6f6f6 16%,#f0f0f0 22%);
+    background-size: 1200px 100%;
+}
+
+.media {
+    height: 150px;
+    margin: 10px 0;
+}
+
+
+.line-title {
+    height: 30px;
+    margin: 10px 0;
+}
+
+.line-title-small {
+    height: 25px;
+    margin: 10px 0;
+}
+
+.line1 {
+    height: 10px;
+    margin: 10px 0;
+}
+
+.line2 {
+    width: 30%;
+    height: 10px;
+}
+
+.shimmer-banner {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0px 8px 8px rgba(0, 34, 43, 0.4);
+    padding: 10px;
+}
+
+.shimmer-restaurant {
+    width: 60%;
+}
+
+.shimmer-left {
+    width: 50%;
+}
+
+.shimmer-right {
+    width: 50%;
+}
+
+.shimmer-menu-container {
+    width: 100%;
+}
+
+.shimmer-menu {
+    width: 60%;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0px 8px 8px rgba(0, 34, 43, 0.4);
+    padding: 10px;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1200px 0;
+    }
+    100% {
+        background-position: 1200px 0;
+    }
+}
+
+/* LOGIN PAGE */
+
+.login-page {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 2rem;
+    width: 320px;
+    box-shadow: 5px  8px 10px #c1caca;
+    border-radius: 20px;
+}
+
+.login-container h2 {
+    margin-bottom: 2rem;
+}
+
+.login-email , .login-password{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin: 0 0 2rem;
+    box-shadow: 5px  8px 10px #c1caca;
+    border: none;
+}
+
+.login-container button {
+    height: 2rem;
+    background-color: #ee5684;
+    border: 2px solid #ee5684;
+    font-weight: 800;
+    box-shadow: 5px  8px 10px #c1caca;
+}
+
+.login-container button:hover {
+    box-shadow: 2px 5px 5px #c1caca;
+    cursor: pointer;
+}
+
+/* ABOUT PAGE */
+
+.about-page {
+    min-height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-page img {
+    width: 40%;
+    border-radius: 30%;
+}
+
+.about-page p {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.about-page p span {
+    color: #E9B824;
+}
+
+/* CONTACT-US PAGE */
+
+.contact-us-page {
+    min-height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+/* .contact-us-page .left {} */
+
+.contact-us-page .left img {
+    width: 100%;
+}
+
+.contact-us-page .right {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+.contact-us-form > .contact-name,.contact-email,.contact-message {
+    display: block;
+    font-size: 20px;
+    width: 90%;
+    padding: 1rem 0.765rem;
+    margin: 1rem 0;
+    border-radius: 1.2rem;
+}
+
+
+/* ERROR PAGE */
+
+.error-page {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-page img {
+    width: 40%;
+}
+
+.nav-button {
+    padding: 1rem 2rem;
+    background-color: #c1caca;
+    box-shadow: 0.3rem 0.3rem #939696;
+    transition: 1s;
+}
+
+.error-message {
+    margin: 2rem 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2d8d8;
+    height: 80px;
+    font-size: 2rem;
+}
+
+footer > p {
+    margin: 0 5px;
+}
