@@ -5,9 +5,9 @@ import Profile from './ProfileClass'
 const About = () => {
 
     return (
-        <div className='about-page'>
+        <div className='mt-16 h-screen flex flex-col justify-center items-center'>
             {/* <Profile name="Nidhn" /> */}
-            <p>Welcome to <span>FOOD WORLD</span></p>
+             <p>Welcome to <span className='font-extrabold text-purple-600'>FOOD WORLD</span></p>
             <img src={food} alt="food" />
         </div>
     )
